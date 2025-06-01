@@ -1,0 +1,4 @@
+FROM odoo:18.0
+USER root
+RUN pip install --no-cache-dir -r /etc/odoo/requirements.txt
+USER odoo

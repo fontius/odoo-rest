@@ -1,0 +1,6 @@
+services:
+  odoo:
+    image: ${DOCKER_REGISTRY}/odoo-restaurant
+    ports:
+      - "8069:8069"
+    env_file: .env.prod
